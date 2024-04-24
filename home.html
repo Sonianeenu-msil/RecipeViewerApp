@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <button id="logout-button">Logout</button>
+    </div>
+    <div class="header-center">
+      <h1>Recipe Book App</h1>
+    </div>
+    <div class="header-right">
+      <button id="add-recipes" onclick="">Add Recipes</button>
+      <button id="show-favorites-button" onclick="showFavoriteRecipes()">Show Favorites</button>
+    </div>
+  </header>
+  <div class="container">
+    <ul id="recipe-list" class="recipe-list">
+    </ul>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>
