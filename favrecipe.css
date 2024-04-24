@@ -1,0 +1,36 @@
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .favorites-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .favorite-item {
+    margin-bottom: 20px;
+  }
+  
+  .favorite-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .favorite-item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

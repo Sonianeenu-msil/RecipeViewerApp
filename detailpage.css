@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 25;
+    padding: 10;
+    box-sizing: border-box;
+  }
+  
+  .recipe-detail {
+    text-align: center;
+  }
+  
+  .recipe-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-image {
+    max-width: 25%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" name="username" placeholder="Username" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <button type="submit" class="button">Login</button>
+            </form>
+        </div>
+        <div class="section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" name="username" id="signup-username" placeholder="Username" required><br><br>
+                <input type="email" name="email" id="signup-email" placeholder="Email" required><br><br>
+                <input type="password" name="password"id="signup-password"  placeholder="Password" required><br><br>
+                <input type="submit" class="button" id="signup-submit" value="Sign up">
+            </form>
+        </div>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getDatabase, ref, get, set, child } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+        // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyDIiQLrZ2mVEbPqMox3pqEWLSoHbttorUE",
+                authDomain: "recipeviewer-5172f.firebaseapp.com",
+                projectId: "recipeviewer-5172f",
+                storageBucket: "recipeviewer-5172f.appspot.com",
+                messagingSenderId: "977717386309",
+                appId: "1:977717386309:web:2d3dc61152a096b90f172c"
+            };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        const userId = auth.curr
+
+        document.getElementById('signup-submit').addEventListener('click', function(event){
+            // event.preventDefault()
+            set(ref(db, 'user/' + document.getElementById('signup-username').value), {
+                UserName: document.getElementById('signup-username').value,
+                Email: document.getElementById('signup-email').value,
+                Password: document.getElementById('signup-password').value
+            })
+        })
+    </script>
+    <script src="loginscript.js"></script>
+</body>
+</html>
